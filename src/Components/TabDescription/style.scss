@@ -1,0 +1,297 @@
+section.specification {
+    background-color: #f7f7f7;
+    padding: 40px 0 70px;
+
+    .content {
+        width: 100%;
+        margin: 0 auto;
+
+        @media (min-width: 200px) and (max-width: 1191px){
+            padding: 0 10px;
+        }
+
+        .content--description-prod {
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -moz-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -webkit-flex-flow: column wrap;
+            -moz-box-orient: vertical;
+            -moz-box-direction: normal;
+            -ms-flex-flow: column wrap;
+            flex-flow: column wrap;
+            -webkit-box-align: start;
+            -webkit-align-items: flex-start;
+            -moz-box-align: start;
+            -ms-flex-align: start;
+            align-items: flex-start;
+            -webkit-box-pack: center;
+            -webkit-justify-content: center;
+            -moz-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            width: 100%;
+
+            h2 {
+                width: 100%;
+                font-size: 22px;
+                font-weight: 700;
+                color: #000;
+                margin-bottom: 25px;
+                text-align: left;
+
+                @media (max-width: 1191px) and (min-width: 200px){
+                    border-top: 1px solid #dbdbdb;
+                    padding: 20px 0;
+                    margin: 0;
+                    background: url(https://newhummel.vteximg.com.br/arquivos/plus.svg) right center no-repeat;
+                    background-size: 27px;
+                    cursor: pointer;
+
+                    &.atv {
+                        background: url(https://newhummel.vteximg.com.br/arquivos/minus.svg) right center no-repeat;
+                        background-size: 27px;
+                    }
+
+                }
+                @media (max-width: 440px){
+                    font-size: 18px;
+                }
+            }
+            .productDescription {
+                display: flex;
+                -webkit-flex-flow: column wrap;
+                -ms-flex-flow: column wrap;
+                flex-flow: column wrap;
+                -webkit-box-align: start;
+                -webkit-align-items: flex-start;
+                -moz-box-align: start;
+                -ms-flex-align: start;
+                align-items: flex-start;
+                -webkit-box-pack: center;
+                -webkit-justify-content: center;
+                -moz-box-pack: center;
+                -ms-flex-pack: center;
+                justify-content: center;
+                text-align: left;
+                font-size: 16px;
+                color: #000;
+                font-weight: 500;
+
+                @media (min-width: 200px) and (max-width: 1191px){
+                    display: none;
+
+                    &.atv{
+                        display: block;
+                    }
+                }
+            }
+        }
+        .content--specification-prod {
+            margin-top: 30px;
+
+            @media (min-width: 200px) and (max-width: 1191px){
+                margin-top: 0px;
+            }
+
+            h4 {
+                width: 100%;
+                font-size: 22px;
+                font-weight: 700;
+                color: #000;
+                margin-bottom: 25px;
+                text-align: left;
+
+                @media (max-width: 440px){
+                    font-size: 18px;
+                }
+
+                @media (min-width: 200px) and (max-width: 1191px){
+
+                &.group.especificacoes {
+                    border-top: 1px solid #dbdbdb;
+                    padding: 20px 0;
+                    margin: 0;
+                    background: url(https://newhummel.vteximg.com.br/arquivos/plus.svg) right center no-repeat;
+                    background-size: 27px;
+                    cursor: pointer;
+                
+                    &.atv {
+                        background: url(https://newhummel.vteximg.com.br/arquivos/minus.svg) right center no-repeat;
+                        background-size: 27px;
+                    }
+                }   
+                }
+            }
+            .mob-guia-tamanho {
+                display: none;
+
+                @media (min-width: 200px) and (max-width: 1191px){
+                    display: block;
+
+                    .group.tamanho{
+                        border-top: 1px solid #dbdbdb;
+                        padding: 20px 0;
+                        margin: 0;
+                        background: url(https://newhummel.vteximg.com.br/arquivos/plus.svg) right center no-repeat;
+                        background-size: 27px;
+                        cursor: pointer;
+
+                        &.atv{
+                            background: url(https://newhummel.vteximg.com.br/arquivos/minus.svg) right center no-repeat;
+                            background-size: 27px;
+                        }
+                        .table--tamanho{
+                            display: none;
+
+                            &.atv{
+                                display: block;
+                                overflow-x: auto;
+                                max-width: 360px;
+                                width: 100%;
+                                margin: 0 auto;
+                            }
+                        }
+                    }
+                }
+            }
+            table {
+                width: 100%;
+                border-collapse: collapse;
+                border-spacing: 0;
+
+                @media (min-width: 200px) and (max-width: 1191px){
+                    &.table--tamanho{
+                        display: none;
+
+                        &.atv {
+                            display: block;
+                            max-width: 360px;
+                            width: 100%;
+                            overflow-x: auto;
+                        }
+                    }
+                    &.table--descricao {
+                        display: none;
+
+                        &.atv {
+                            display: block;
+
+                            tr{
+                                &:nth-child(5) {
+                                    display: none;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                tr {
+                    th.name-field {
+                        width: 100%;
+                        display: block;
+                        text-align: left;
+                        margin-bottom: 10px;
+                    }
+                    td.value-field {
+                        width: 100%;
+                        display: block;
+                        margin-bottom: 25px;
+                        font-size: 16px;
+                        font-weight: 500;
+                        color: #000;
+                        text-align: left;
+                    }
+                }
+            }
+            table td.Guia-de-Tamanhos table {
+                max-width: 535px;
+                float: left;
+                display: table;
+
+                tbody {
+                    tr{
+                        &:nth-child(1){
+                            background: #DBDBDB;
+
+                            td {
+                                font-size: 16px;
+                                font-weight: 700;
+                                background-color: #DBDBDB;
+                            }
+                        }
+                        &:nth-child(even) td {
+                            background: #f7f7f7!important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    th.name-field {
+        width: 100%;
+        display: block;
+        text-align: left;
+        margin-bottom: 10px;
+        font-weight: 700;
+        color: #000;
+    }
+    table td.value-field {
+        width: 100%;
+        display: block;
+        margin-bottom: 25px;
+        font-size: 16px;
+        font-weight: 500;
+        color: #000;
+    }
+    td.value-field.caracteristicas {
+        line-height: 2.5;
+    }
+    .content--specification-prod table{
+        width: 100%;
+    }
+    table td.guia-tamanho table {
+        max-width: 535px;
+        float: left;
+        display: table;
+    }
+    td.guia-tamanho tbody tr:first-child td {
+        font-size: 16px!important;
+        font-weight: 700!important;
+        background-color: #DBDBDB!important;
+    }
+    .first-line{
+        background-color: #FFF;
+        border-color: black;
+        border-style: solid;
+        border-width: 1px;
+        font-family: Arial, sans-serif;
+        font-size: 14px;
+        overflow: hidden;
+        padding: 10px 5px;
+        text-align: center;
+        word-break: normal;
+    }
+    .vertical-top{
+        vertical-align: top;
+    }
+    .vertical-middle{
+        vertical-align: middle;
+    }
+    .vertical-bottom{
+        vertical-align: bottom;
+    }
+    td.guia-tamanho tbody tr:nth-child(even) td {
+        background: #f7f7f7!important;
+    }
+    td.guia-tamanho tbody tr td {
+        font-size: 16px!important;
+        border: none!important;
+    }
+    td.guia-tamanhos table tbody tr:nth-child(odd):not(:first-child) td {
+        background: #fff!important;
+    }
+}

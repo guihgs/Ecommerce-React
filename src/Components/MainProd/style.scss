@@ -1,0 +1,68 @@
+@import "../../Sass/lightbox.scss";
+
+.content--leftProd{
+    width: 50%;
+    padding-top: 30px;
+    padding-right: 30px;
+    
+    @media (max-width: 1191px) and (min-width: 200px){ 
+            display: block;
+            -webkit-box-align: end;
+            -webkit-box-pack: start;
+            width: 100%;
+            margin: 0 auto;
+            padding-right: 0;
+            height: 442px;
+    }
+
+    .content--product{
+        width: 100%;
+    }
+    .slider-img {
+        
+        div{
+            &:nth-child(1){
+                img {
+                    display: block;
+                    max-width: 600px;
+                    max-height: 600px;
+                    width: 100%;
+                    margin: 0px auto;
+                    margin-right: 0;
+                    cursor: pointer;
+            
+                    @media (max-width: 1270px){
+                        margin-right: auto;
+                    }
+                    @media (max-width: 900px){
+                        margin-right: auto;
+                        max-width: 340px;
+                        width: 100%;
+                        height: auto;
+                    }
+                }
+            }
+            &:nth-child(2){
+                img {
+                    display: block;
+                    max-width: 270px;
+                    width: 100%;
+                    margin: 0 auto;
+                    margin-right: 165px;
+                    cursor: pointer;
+        
+                    @media (max-width: 1270px){
+                        margin-right: auto;
+                    }
+                    @media (max-width: 900px){
+                        max-width: 340px;
+                        width: 100%;
+                        height: auto;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@import "../../Sass/slick-dots.scss";
